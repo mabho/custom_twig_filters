@@ -1,0 +1,13 @@
+{
+  "name": "mabho/custom_twig_filters",
+  "description": "This project consists of a Drupal module that adds custom, additional TWIG filters, helping deliver more functionality to themers.",
+  "type": "drupal-custom-module",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Marcos Buarque",
+      "homepage": "https://www.drupal.org/u/gausarts"
+    }
+  ],
+  "require": {}
+}
