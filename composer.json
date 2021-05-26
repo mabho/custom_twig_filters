@@ -9,5 +9,8 @@
       "homepage": "https://www.drupal.org/u/gausarts"
     }
   ],
-  "require": {}
+  "require": {
+    "php": ">= 7.2",
+    "drupal/core": "^8.8 || ^9"
+  }
 }
