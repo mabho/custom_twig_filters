@@ -7,7 +7,9 @@
 namespace Drupal\custom_twig_filters\TwigExtension;
 class customFilters extends \Twig_Extension {
   public function getFilters() {
-      return [ new \Twig_SimpleFilter('slugify', array($this, 'slugify'))];
+      return [ 
+        new \Twig_SimpleFilter('slugify', array($this, 'slugify'))
+      ];
   }
 
   public function getName() {
