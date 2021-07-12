@@ -47,11 +47,10 @@ class customFilters extends \Twig_Extension
     // Discard white space 
     $dom->preserveWhiteSpace = FALSE;
 
-    // Strips undesired characters from tag.
-
+    // @todo: strip undesired characters from tag.
     $strippedtag = $tag; // preg_replace('\<\>', '\\1', $h1);
 
-    $strippedtext_group = $dom->getElementsByTagName($strippedtag); // here u use your desired tag
+    $strippedtext_group = $dom->getElementsByTagName($strippedtag);
     $strippedtext = $strippedtext_group->item(0)->nodeValue;
 
     return \Drupal::service('pathauto.alias_cleaner')->cleanString($strippedtext);
