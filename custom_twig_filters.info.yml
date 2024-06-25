@@ -2,4 +2,4 @@ name: Custom Twig Filters
 type: module
 description: 'Provide some custom twig filter and functions.'
 package: Twig
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9.3 || ^10
