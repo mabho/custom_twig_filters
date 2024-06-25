@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "php": ">= 7.2",
-    "drupal/core": "^9.3"
+    "php": ">= 8.0",
+    "drupal/core": "^9.3 || ^10"
   }
 }
