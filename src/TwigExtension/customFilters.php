@@ -8,13 +8,16 @@
 
 namespace Drupal\custom_twig_filters\TwigExtension;
 
-class customFilters extends \Twig_Extension
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
+
+class customFilters extends AbstractExtension
 {
   public function getFilters()
   {
     return [
-      new \Twig_SimpleFilter('slugify_from_tag', array($this, 'slugify_from_tag')),
-      new \Twig_SimpleFilter('slugify', array($this, 'slugify')),
+      new TwigFilter('slugify_from_tag', array($this, 'slugify_from_tag')),
+      new TwigFilter('slugify', array($this, 'slugify')),
     ];
   }
 
